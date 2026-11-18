@@ -1,17 +1,9 @@
-/* Rush/Drag site: the app's tokens (Stage by default, Daylight when the visitor's system is light) */
+/* Rush/Drag site: the app's Stage tokens, always (owner, 2026-11-18) */
 :root {
   --bg: #08090a; --surface: #101215; --tap: #1c1f24; --edge: #5e6470; --grid: #22252a;
   --ink: #f4f5f7; --muted: #9aa3b2; --accent: #ffb224; --accent-text: #ffb224;
   --rush: #ff6a5c; --on: #5be38a; --drag: #4f9bff;
   --display: "Barlow Condensed", system-ui, sans-serif; --body: "Barlow", system-ui, sans-serif;
-}
-@media (prefers-color-scheme: light) {
-  :root {
-    --bg: #f2f3f5; --surface: #ffffff; --tap: #e2e5ea; --edge: #6a727e; --grid: #dadee4;
-    --ink: #0b0d10; --muted: #4e5662; --accent: #ad7300; --accent-text: #8f5500;
-    --rush: #c4372c; --on: #0d7a3b; --drag: #1f5fbf;
-  }
-  .wm-dark { display: none; } .wm-light { display: block !important; }
 }
 * { box-sizing: border-box; }
 html { -webkit-text-size-adjust: 100%; }
@@ -27,7 +19,6 @@ header .wrap { display: flex; align-items: center; justify-content: space-betwee
 .brand { display: flex; align-items: center; gap: 12px; text-decoration: none; }
 .brand img.icon { width: 40px; height: 40px; border-radius: 10px; }
 .brand .wm { height: 30px; width: auto; }
-.wm-light { display: none; }
 nav a { font: 600 15px/1 var(--display); letter-spacing: .1em; text-transform: uppercase; color: var(--muted); text-decoration: none; margin-left: 20px; }
 nav a:hover, nav a[aria-current] { color: var(--ink); }
 footer { margin-top: 72px; border-top: 2px solid var(--grid); padding: 28px 0 40px; color: var(--muted); font-size: 15px; }
